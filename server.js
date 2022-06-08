@@ -53,6 +53,10 @@ app.get('/images/pika.png', (request, response)=>{
 app.get('/images/char.png', (request, response)=>{
   response.sendFile(__dirname + '/images/char.png')
 })
+app.get('/images/blastoise.png', (request, response)=>{
+  response.sendFile(__dirname + '/images/blastoise.png')
+})
+
 app.get('/css/style.css', (request, response)=>{
   response.sendFile(__dirname + '/css/style.css')
 })

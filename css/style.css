@@ -12,7 +12,7 @@ h1{
   
 }
 body {
-   background-image: url("/images/background.jpg"); 
+   background-image: url("https://poke-ap.herokuapp.com/images/background.jpg"); 
    background-size: cover;
    background-repeat: none;
    width: 100%;
