@@ -20,7 +20,7 @@ class Pokemon {
   const charmander = new Pokemon('Charmander', 'Fire', '/images/char.png')
   const blastoise = new Pokemon('Blastoise', 'Water', '/images/blastoise.png')
   const snorlax = new Pokemon('Snorlax', 'Normal',  '/images/snorlax.png')
-
+  let pokemons = [pikachu, bulbasaur, squirtle, charmander, blastoise, snorlax]
 
   
 
@@ -31,12 +31,9 @@ class Pokemon {
 
 
 
-
 app.get('/images/background.jpg', (request, response)=>{
   response.sendFile(__dirname + '/images/background.jpg')
 })
-
-
 
 app.get('/images/bulb.png', (request, response)=>{
   response.sendFile(__dirname + '/images/bulb.png')
