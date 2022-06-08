@@ -29,6 +29,9 @@ class Pokemon {
     response.sendFile(__dirname + '/index.html')
 })
 
+app.get('/images/bulb.png', (request, response)=>{
+    response.sendFile(__dirname + '/images/bulb.png')
+})
 
 
 app.get('/api/:name',(request,response)=>{
