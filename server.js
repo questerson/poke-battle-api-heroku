@@ -7,21 +7,21 @@ app.use(cors())
 
 
 
-// class Pokemon {
-//     constructor(name, type, imageUrl) {
-//       this.name = name
-//       this.type = type
-//       this.imageUrl = imageUrl 
-//     }
-//   }
-//   const pikachu = new Pokemon('Pikachu', 'Electric',  '/images/pika.png')
-//   const bulbasaur = new Pokemon('Bulbasaur', 'Grass',  '/images/bulb.png')
-//   const squirtle = new Pokemon('Squirtle', 'Water',  '/images/squirt.png')
-//   const charmander = new Pokemon('Charmander', 'Fire', '/images/char.png')
-//   const blastoise = new Pokemon('Blastoise', 'Water', '/images/blastoise.png')
-//   const snorlax = new Pokemon('Snorlax', 'Normal',  '/images/snorlax.png')
-//   const unknown = new Pokemon('Unknown', 'Unknown', '/images/unknown.png')
-//   let pokemons = [pikachu, bulbasaur, squirtle, charmander, blastoise, snorlax, unknown]
+class Pokemon {
+    constructor(name, type, imageUrl) {
+      this.name = name
+      this.type = type
+      this.imageUrl = imageUrl 
+    }
+  }
+  const pikachu = new Pokemon('Pikachu', 'Electric',  '/images/pika.png')
+  const bulbasaur = new Pokemon('Bulbasaur', 'Grass',  '/images/bulb.png')
+  const squirtle = new Pokemon('Squirtle', 'Water',  '/images/squirt.png')
+  const charmander = new Pokemon('Charmander', 'Fire', '/images/char.png')
+  const blastoise = new Pokemon('Blastoise', 'Water', '/images/blastoise.png')
+  const snorlax = new Pokemon('Snorlax', 'Normal',  '/images/snorlax.png')
+  const unknown = new Pokemon('Unknown', 'Unknown', '/images/unknown.png')
+  let pokemons = [pikachu, bulbasaur, squirtle, charmander, blastoise, snorlax, unknown]
   
 
 
@@ -31,10 +31,10 @@ app.use(cors())
 
 
 
-app.get('/api/:name',(request,response)=>{
+app.get('/api/',(request,response)=>{
     const pokeName = request.params.name.toLowerCase()
 
-   
+   console.log()
         response.json(pokemons)
   
     
