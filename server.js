@@ -20,8 +20,8 @@ class Pokemon {
   const charmander = new Pokemon('Charmander', 'Fire', '/images/char.png')
   const blastoise = new Pokemon('Blastoise', 'Water', '/images/blastoise.png')
   const snorlax = new Pokemon('Snorlax', 'Normal',  '/images/snorlax.png')
-  const unknown = new Pokemon('Unknown', 'Unknown', '/images/unknown.png')
-  let pokemons = [pikachu, bulbasaur, squirtle, charmander, blastoise, snorlax, unknown]
+
+
   
 
 
@@ -29,15 +29,33 @@ class Pokemon {
     response.sendFile(__dirname + '/index.html')
 })
 
-app.get('/images/snorlax.png', (request, response)=>{
-  response.sendFile(__dirname + '/images/snorlax.png')
+
+
+
+app.get('/images/background.jpg', (request, response)=>{
+  response.sendFile(__dirname + '/images/background.jpg')
 })
 
 
+
+app.get('/images/bulb.png', (request, response)=>{
+  response.sendFile(__dirname + '/images/bulb.png')
+})
 app.get('/images/pika.png', (request, response)=>{
   response.sendFile(__dirname + '/images/pika.png')
 })
-
+app.get('/images/squirt.png', (request, response)=>{
+  response.sendFile(__dirname + '/images/squirt.png')
+})
+app.get('/images/snorlax.png', (request, response)=>{
+  response.sendFile(__dirname + '/images/snorlax.png')
+})
+app.get('/images/pika.png', (request, response)=>{
+  response.sendFile(__dirname + '/images/pika.png')
+})
+app.get('/images/char.png', (request, response)=>{
+  response.sendFile(__dirname + '/images/char.png')
+})
 
 app.get('/api/',(request,response)=>{
    
