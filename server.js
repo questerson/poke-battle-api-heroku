@@ -32,7 +32,7 @@ class Pokemon {
 
 
 app.get('/api/',(request,response)=>{
-    const pokeName = request.params.name.toLowerCase()
+   const pokeName = request.params.name.toLowerCase()
 
    console.log()
         response.json(pokemons)
